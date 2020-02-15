@@ -1,5 +1,5 @@
 from api_functions import *
-from Login_and_Registration import *
+from login_and_registration import *
 
 
 app = Flask(__name__, static_url_path="/tmp", static_folder="/Users/maor/Desktop/")
