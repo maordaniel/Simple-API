@@ -24,7 +24,7 @@ def login():
             session['username'] = content['_id']
             print(session)
             return make_response(
-                {"alert": "שלום " + user['Name'] + " \nYou will immediately be taken to the homepage",
+                {"alert": "hello " + user['Name'] + " \nYou will immediately be taken to the homepage",
                  "name": user['Name'].split(" ", 1)[0]}, 201)
         return "The details are incorrect, please try again"
     return "The details are incorrect, please try again"
