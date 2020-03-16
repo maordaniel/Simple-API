@@ -4,8 +4,7 @@ from login_and_registration import *
 
 app = Flask(__name__, static_url_path="/tmp")
 app.secret_key = os.urandom(12)
-CORS(app,
-     supports_credentials=True)
+CORS(app, supports_credentials=True)
 
 
 @app.route('/api/login', methods=['POST'])
