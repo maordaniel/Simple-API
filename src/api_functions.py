@@ -2,6 +2,9 @@ from flask import Flask, jsonify, make_response, request, flash, redirect, rende
     url_for
 import pymongo
 from datetime import datetime
+import os
+from flask_cors import CORS, cross_origin
+import json
 
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["mydatabase"]
